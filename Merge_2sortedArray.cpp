@@ -37,6 +37,7 @@ int main(){
     int n=4;
     int m=5;
     mergearray(a,b,n,m);
+    // Ignore the below code.
   //  cout<<"the merged sorted array is: ";
   //  for(int i=0;i<n+m;i++){
     //    cout<<a[i]<<" ";
