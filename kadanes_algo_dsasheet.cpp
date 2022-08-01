@@ -1,17 +1,19 @@
 #include<iostream>
 using namespace std;
 int maxsumarray(int a[],int n){
-    int maxsum=INT_MIN;
-    int sum=0;
-    for(int i=0;i<n;i++){
-        sum+=a[i];
-         maxsum=max(maxsum,sum);
-         if(sum<0){
-             sum=0;
-         }
-        
+    int sum=a[0];
+    int max_sum=a[0];
+    for(int i=1;i<n;i++){
+   
+        if(sum+a[i]>=a[i]){
+            sum+=a[i];
+        }
+        if(sum+a[i]<a[i]){
+            sum=a[i];
+        }
+        max_sum=max(max_sum,sum);
     }
-    return maxsum;
+    return max_sum;
 }
 int main(){
     int a[]={1,2,3,-2,5};
